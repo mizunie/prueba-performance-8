@@ -1,0 +1,26 @@
+name: k6 load test
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run k6 test
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: fakestoreapi.js
+          flags: --out json=resultados.json
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-results
+          path: resultados.json

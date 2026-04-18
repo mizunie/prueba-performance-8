@@ -1,0 +1,12 @@
+CONCLUSIONES
+
+La prueba de carga sobre el servicio de login se ejecutó correctamente cumpliendo los criterios establecidos.
+
+Durante la ejecución:
+
+- El sistema mantuvo tiempos de respuesta dentro del umbral definido (p95 < 1.5s).
+- La tasa de errores se mantuvo por debajo del 3% en el escenario configurado.
+- El endpoint respondió de forma consistente bajo una carga de al menos 20 TPS.
+- No se evidenciaron degradaciones críticas del servicio durante la prueba.
+
+En general, el comportamiento del servicio bajo carga fue estable y predecible, sin indicios de saturación en el rango de pruebas ejecutado.
