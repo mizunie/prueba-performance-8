@@ -1,5 +1,7 @@
 # EJERCICIO 1 - PRUEBA DE CARGA LOGIN API (K6)
 
+![CI](https://github.com/mizunie/prueba-performance-8/actions/workflows/k6.yml/badge.svg)
+
 ## 1. DESCRIPCIÓN
 
 Este proyecto realiza una prueba de carga sobre un servicio de login utilizando **k6**.
@@ -97,7 +99,7 @@ Permite visualizar métricas del test de forma gráfica.
 
 ### Evidencia
 
-![reporte1](report1.png)
+![reporte1](reporte1.png)
 
 ---
 
